@@ -1,5 +1,5 @@
 /**
- * PS2 Controller Emulator v1.0 for Teensy 2.0
+ * Teensy-DS2-Emulator v1.0 for Teensy 2.0
  *
  * Copyright (C) 2017 Sahithyen Kanaganayagam <mail@sahithyen.com>
  *
