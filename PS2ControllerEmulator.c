@@ -1,7 +1,7 @@
 /**
- * PS2 Controller Emulator v2.0 for Teensy 2.0
+ * PS2 Controller Emulator v1.0 for Teensy 2.0
  *
- * Copyright (C) 2015 Aaron Clovsky <pelvicthrustman@gmail.com>
+ * Copyright (C) 2017 Sahithyen Kanaganayagam <mail@sahithyen.com>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -12,20 +12,6 @@
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
  * GNU General Public License for more details.
- *
- *  Special thanks goes to the following projects for making this possible
- *    Teensy PS2 Controller Sim Firmware v2 by Johnny Chung Lee
- *      <http://procrastineering.blogspot.com/2010/12/simulated-ps2-controller-for.html>
- *    Playstation Controller Extender by Micah Elizabeth Scott
- *      <http://scanlime.org/2007/08/playstation-controller-extender/>
- *    Interfacing a PS2 Controller @ curiousinventor.com
- *      <http://store.curiousinventor.com/guides/PS2/>
- *    SNES to PSX: SNES controller to Playstation adapter by Raphaël Assénat
- *      <http://www.raphnet.net/electronique/snes_to_psx/index_en.php>
- *    LilyPad pcsx2 plugin by ChickenLiver
- *      <https://github.com/PCSX2/pcsx2/tree/master/plugins/LilyPad>
- *    PadSSSPSX pcsxr plugin by Nagisa
- *      <https://github.com/tetious/pcsxr/tree/master/win32/plugins/PadSSSPSX>
  */
 
 #include "usb_serial.h"    /* USB serial support */
@@ -36,9 +22,9 @@
  Firmware Configuration
 *******************************************************************************/
 
-/*#define INVERT_SPI_MISO*/              /* Perform bitwise-not on SPI output */
-/*#define ACK_SIMULATED_OPEN_COLLECTOR*/ /* Use alternate Ack signaling */
-/*#define USE_8MHZ*/                     /* Run CPU at 8MHz instead of 16MHz */
+// #define INVERT_SPI_MISO              // Perform bitwise-not on SPI output
+// #define ACK_SIMULATED_OPEN_COLLECTOR // Use alternate Ack signaling
+// #define USE_8MHZ                     // Run CPU at 8MHz instead of 16MHz
 
 /*******************************************************************************
  Hardware Configuration
